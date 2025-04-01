@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storytime App</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-4">
+        <ul class="flex justify-center space-x-8">
+            <li><a href="index.html" class="text-white font-semibold">Home</a></li>
+            <li><a href="about.html" class="text-white font-semibold">About</a></li>
+            <li><a href="contact.html" class="text-white font-semibold">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-16 bg-blue-100">
+        <h1 class="text-5xl font-bold text-blue-700">Welcome to the Storytime App!</h1>
+        <p class="mt-4 text-lg text-gray-700">A fun and easy way to read with your child. Highlight words as you read, and let your child follow along!</p>
+        <a href="#early-access" class="mt-6 inline-block px-6 py-2 bg-blue-600 text-white rounded-full text-xl">Sign Up for Early Access</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-blue-700">Features</h2>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 border border-gray-300 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold">Interactive Reading</h3>
+                    <p class="mt-4 text-gray-600">Your child can follow along with the story as you read, with words highlighted in real time.</p>
+                </div>
+                <div class="p-8 border border-gray-300 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold">Audio Read Aloud</h3>
+                    <p class="mt-4 text-gray-600">Let the app read the story aloud to your child when you don't have time to read aloud yourself.</p>
+                </div>
+                <div class="p-8 border border-gray-300 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold">Easy Navigation</h3>
+                    <p class="mt-4 text-gray-600">Quickly move through stories and choose your favorite ones with ease!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Form Section -->
+    <section id="early-access" class="py-16 bg-gray-200 text-center">
+        <h2 class="text-3xl font-bold text-blue-700">Sign Up for Early Access</h2>
+        <p class="mt-4 text-lg text-gray-700">Be the first to try out the Storytime App!</p>
+
+        <form id="early-access-form" class="mt-6 max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <label for="signup-name" class="block text-left font-semibold text-gray-700">Name</label>
+            <input type="text" id="signup-name" placeholder="Enter your name" class="w-full p-2 border rounded-lg mt-2" required>
+
+            <label for="signup-email" class="block mt-4 text-left font-semibold text-gray-700">Email</label>
+            <input type="email" id="signup-email" placeholder="Enter your email" class="w-full p-2 border rounded-lg mt-2" required>
+
+            <button type="submit" class="mt-6 bg-blue-600 text-white px-6 py-2 rounded-full text-xl w-full">
+                Sign Up Now
+            </button>
+        </form>
+        
+        <!-- Message Response -->
+        <p id="signup-response" class="mt-4 text-lg font-bold"></p>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-blue-600 text-white py-16 text-center">
+        <h2 class="text-3xl font-bold">Ready to Join Us?</h2>
+        <p class="mt-4 text-lg">Sign up now and be the first to try out the Storytime App!</p>
+        <a href="#early-access" class="mt-6 inline-block px-6 py-2 bg-white text-blue-600 rounded-full text-xl">Sign Up Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-500 text-white text-center py-6">
+        <p>&copy; 2025 Storytime App. All rights reserved.</p>
+    </footer>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
